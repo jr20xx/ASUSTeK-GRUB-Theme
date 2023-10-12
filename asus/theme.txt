@@ -1,0 +1,49 @@
+# Main options
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Terminus Regular 14"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Boot menu
++ boot_menu {
+  left = 25%
+  top = 40%
+  width = 50%
+  height = 65%
+  item_font = "Ubuntu Regular 16"
+  item_color = "#cccccc"
+  selected_item_color = "#ffffff"
+  icon_width = 36
+  icon_height = 36
+  item_icon_space = 20
+  item_height = 40
+  item_padding = 2
+  item_spacing = 10
+  selected_item_pixmap_style = "select_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  left = 0%
+  width = 100%
+  top = 100%
+  height = 21
+  show_text = true
+  text_color = "255, 255, 255"
+  bar_style = "progress_bar_*.png"
+  highlight_style = "progress_highlight_*.png"
+}
+
++ image {
+  top = 80%+47
+  left = 50%-137
+  width = 274
+  height = 18
+  file = "menu.png"
+}
