@@ -36,7 +36,7 @@ GRUB_THEME="/boot/grub/themes/asus/theme.txt"
 
 > [!WARNING]
 >- Please make sure to **make a backup** of your original configuration file to ease the process of rolling back your changes.
->- **DO NOT** remove all the content of that file and then just leave only those three lines inside all by themselves under any concept or you may break the GRUB configuration. The remaining texts in the file need to remain untouched, unless you know what you are doing.
+>- **DO NOT** remove all the content of the GRUB configuration file and then leave only those three lines inside all by themselves under any concept or you may break the bootloader configuration. The remaining texts in the file need to remain untouched, unless you know what you are doing.
 
 After doing those three changes, you have to rebuild the GRUB configuration. Once again, you might need to read the docs of your distro to perform this step, but taking [Arch Linux](https://archlinux.org/) as example, the command needed to perform this operation is the following:
 ```bash
