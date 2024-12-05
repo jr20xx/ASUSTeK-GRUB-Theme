@@ -17,9 +17,10 @@ First, clone this repo by opening a terminal and executing the following command
 ```bash
 git clone https://github.com/jr20xx/ASUSTeK-GRUB-Theme
 ```
-Once you've successfuly cloned this repo, copy the `asus` directory to `/boot/grub/themes`. Please notice that the destination is a system protected directory and you may need to get root permission to copy files in it. If you want, you can do it all from a terminal by executing:
+Once you've successfuly cloned this repo, open the newly created folder with the cloned files and copy the `asus` directory to `/boot/grub/themes`. Please notice that the destination is a system protected directory and you may need to get root permission to copy files in it. If you want, you can do it all from a terminal by executing:
 ```bash
-sudo cp -rv asus /boot/grub/themes
+cd ASUSTeK-GRUB-Theme
+sudo cp -rv asus /boot/grub/themes/asus
 ```
 After copying the theme, you have to setup GRUB to make use of it. You might need to read the docs of your distro to perform this step, but the location of the configuration file in most distros is `/etc/default/grub`. Open that file with your prefered text editor and then locate the following texts:
 - **GRUB_GFXMODE**
