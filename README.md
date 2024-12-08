@@ -3,11 +3,13 @@
 ### Table of Contents
 - [Disclaimer](#disclaimer)
 - [Usage](#usage)
+    - [Manual configuration](#manual-configuration)
+    - [Automated configuration](#automated-configuration)
 - [Contribution](#contribution)
 
 ## Disclaimer
 
-The pieces for this theme were put together by me, using some free resources I found on the Internet, with the purpose of creating a nice [GRUB](https://en.wikipedia.org/wiki/GNU_GRUB) theme for the laptop where I currently do all my work. The original image used for the background can be found in [this website](https://wallhere.com/en/wallpaper/1510751) and the template and fonts I used for the theme can be found in [this GitHub repository](https://github.com/vinceliuice/grub2-themes).
+The pieces for this theme were put together by me, using some free resources I found on the Internet, with the purpose of creating a nice [GRUB](https://en.wikipedia.org/wiki/GNU_GRUB) theme for the laptop where I currently do all my work. The original image used for the background can be found in [this website](https://wallhere.com/en/wallpaper/1510751) and the template and fonts used for the theme were taken from [this GitHub repository](https://github.com/vinceliuice/grub2-themes).
 
 I have no relation with [ASUSTeK Computer Inc.](https://www.asus.com/), its partners or any of the projects I mentioned above. All the information and logos found inside this project are property of their respective owners; with exception of the few ones created by me.
 
@@ -17,7 +19,12 @@ First, clone this repo by opening a terminal and executing the following command
 ```bash
 git clone https://github.com/jr20xx/ASUSTeK-GRUB-Theme
 ```
-Once you've successfuly cloned this repo, open the newly created folder with the cloned files and copy the `asus` directory to `/boot/grub/themes`. Please notice that the destination is a system protected directory and you may need to get root permission to copy files in it. If you want, you can do it all from a terminal by executing:
+
+Once you've successfuly cloned the repo, open the newly created folder with the cloned files and follow any of the following configuration methods described here.
+
+### Manual configuration
+
+ Once you are into the folder with the files from this repo, copy the `asus` directory to `/boot/grub/themes`. Please notice that the destination is a system protected directory and you may need to get root permission to copy files in it. If you want, you can do it from a terminal by executing:
 ```bash
 cd ASUSTeK-GRUB-Theme
 sudo cp -rv asus /boot/grub/themes/asus
@@ -43,6 +50,23 @@ After doing those three changes, you have to rebuild the GRUB configuration. Onc
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 After updating the GRUB configuration, just reboot and then you should see this theme in action.
+
+### Automated configuration
+
+If you don't have much time to do all the previously described steps or simply want to speed up the setup process, you can give a try to the Python script included in the repository files. That script must be run as root and it will automatically perform all the steps described in the [manual configuration](#manual-configuration) part, providing you with a detailed enough output of what it might be doing and the results of the operations it will perform.
+
+To execute the aforementioned script, just launch a terminal and run the following command:
+```bash
+sudo python3 install.py
+```
+
+Once it's all done without any errors, you should see an output message with the following content:
+```
+MESSAGE:
+- The execution of the script was fully completed.
+- A backup of the previous configuration file was stored at /root/grubcfg_backup.
+- You should see the ASUSTeK GRUB Theme next time you boot.
+```
 
 ## Contribution
 
