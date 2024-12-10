@@ -1,5 +1,14 @@
 ## ASUSTeK GRUB Theme
 
+<p>
+    <a href="https://github.com/jr20xx/ASUSTeK-GRUB-Theme/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/jr20xx/ASUSTeK-GRUB-Theme?label=License" alt="License">
+    </a>
+    <a href="https://github.com/jr20xx/ASUSTeK-GRUB-Theme">
+        <img src="https://img.shields.io/github/repo-size/jr20xx/ASUSTeK-GRUB-Theme?label=Repository+Size" alt="Repository Size">
+    </a>
+</p>
+
 ### Table of Contents
 - [Disclaimer](#disclaimer)
 - [Usage](#usage)
